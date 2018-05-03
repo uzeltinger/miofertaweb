@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_J_BUSINESSDIRECTORY_MENUITEM_OFFER">
+        <message>COM_J_BUSINESSDIRECTORY_MENUITEM_OFFER_INFO</message>
+    </layout>
+
+    <fields name="request">
+        <fieldset name="request">
+            <field
+                    name="offerId"
+                    type="text"
+                    default=""
+                    label="Offer Id"
+                    description="Please enter id of the offer you want to show"
+                    required='required'/>
+        </fieldset>
+    </fields>
+</metadata>

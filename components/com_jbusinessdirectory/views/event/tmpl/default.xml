@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_J_BUSINESSDIRECTORY_MENUITEM_EVENT">
+        <message>COM_J_BUSINESSDIRECTORY_MENUITEM_EVENT_INFO</message>
+    </layout>
+
+    <fields name="request">
+        <fieldset name="request">
+            <field
+                    name="eventId"
+                    type="text"
+                    default=""
+                    label="Event Id"
+                    description="Please enter id of the event you want to show"
+                    required='required'/>
+        </fieldset>
+    </fields>
+</metadata>

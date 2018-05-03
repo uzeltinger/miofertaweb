@@ -1,0 +1,45 @@
+<?php /*------------------------------------------------------------------------
+# JBusinessDirectory
+# author CMSJunkie
+# copyright Copyright (C) 20125 cmsjunkie.com. All Rights Reserved.
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.cmsjunkie.com
+# Technical Support:  Forum - http://www.cmsjunkie.com/forum/j-businessdirectory/?p=1
+-------------------------------------------------------------------------*/
+
+defined( '_JEXEC' ) or die( 'Restricted access' );
+?>
+
+<?php if(!empty($review->pictures)){?>
+    <div class="slidergallery" id="slidergallery" style="width:auto">
+        <div id="pageContainer">
+            <div id="slideshow">
+                <div id="slidesContainer">
+                    <div class="slide-dir">
+                        <ul class="gallery gallery_review">
+                            <?php
+                            $index = 1;
+                            $totalItems = count($this->pictures);
+                            ?>
+                            <?php foreach( $review->pictures as $picture ){ ?>
+                                <li>
+                                    <a href="<?php echo JURI::root().PICTURES_PATH.$picture->picture_path ?>" rel="prettyPhoto[pp_gal]" title="<?php echo $this->escape($picture->picture_info) ?>">
+                                        <img itemprop="image" src="<?php echo JURI::root().PICTURES_PATH.$picture->picture_path ?>" alt="<?php echo $this->escape($picture->picture_info) ?>" />
+                                    </a>
+                                </li>
+
+                            <?php } ?>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
+<script>
+    jQuery(document).ready(function() {
+        magnifyImages('gallery');
+    });
+</script>

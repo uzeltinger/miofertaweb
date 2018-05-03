@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_J_BUSINESSDIRECTORY_MENUITEM_PACKAGES">
+		<message>COM_J_BUSINESSDIRECTORY_MENUITEM_PACKAGES</message>
+	</layout>
+
+	<fields name="request">
+		<fieldset name="request">
+			<field
+					name="packageInfo"
+					type="textarea"
+					default=""
+					label="Package text"
+					description="Enter a text which will be shown on top of the packages"/>
+		</fieldset>
+	</fields>
+</metadata>
